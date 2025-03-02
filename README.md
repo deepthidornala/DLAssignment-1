@@ -32,28 +32,6 @@ train_data = datasets.CIFAR10(root='./data', train=True, download=True)
 test_data = datasets.CIFAR10(root='./data', train=False, download=True)
 ```
 
-## Usage
-
-### 1. Train the model
-Run the training script with default hyperparameters:
-```bash
-python train.py --dataset cifar10 --epochs 10 --batch_size 32 --optimizer adam
-```
-For CIFAR-100:
-```bash
-python train.py --dataset cifar100 --epochs 10 --batch_size 32 --optimizer adam
-```
-
-### 2. Evaluate the model
-```bash
-python test.py --dataset cifar10 --batch_size 32
-```
-
-### 3. Plot sample images
-```bash
-python visualize.py --dataset cifar10
-```
-
 ## Model Architecture
 - **Input:** 32×32×3 images flattened into 3072-dimensional vectors
 - **Hidden Layers:** Configurable (default: 3 hidden layers, 128 neurons each)
@@ -102,19 +80,6 @@ From CIFAR experiments, the following configurations are recommended for MNIST:
 | Adam, 4 layers (64 neurons each), batch size = 16, L2 = 0.0005 | 97.8% |
 | SGD (momentum 0.9), 3 layers (128 neurons each), batch size = 32, L2 = 0.0005 | 97.2% |
 
-## How to Contribute
-1. Fork the repository.
-2. Create a new branch for your feature.
-3. Commit your changes and push them.
-4. Open a pull request.
-
-## Plagiarism Policy
-- The project must be original.
-- Proper train/test data splitting must be ensured.
-- Any copied work will result in zero marks in the assignment.
-
-## Contact
-For any issues or questions, open an issue in the repository or reach out to **your-email@example.com**.
 
 ---
 **End of README**
