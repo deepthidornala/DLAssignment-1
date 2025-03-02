@@ -82,4 +82,4 @@ From CIFAR experiments, the following configurations are recommended for MNIST:
 
 
 ---
-**End of README**
+
